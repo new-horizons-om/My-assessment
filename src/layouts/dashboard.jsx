@@ -22,7 +22,7 @@ const Dashboard = () => {
             >
               <FaBars size={22} />
             </button>
-            <h1 className="text-lg font-semibold">My Assesstment</h1>
+            <h1 className="text-lg font-semibold">My assessment</h1>
           </div>
 
           <div className="w-8 h-8 bg-white rounded-full flex justify-center items-center">

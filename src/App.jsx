@@ -9,9 +9,8 @@ import Auth from "./layouts/auth";
 import Login from "./pages/login";
 import Register from "./pages/register";
 import ForgetPassword from "./pages/forgetPassword";
-import Task from "./pages/task";
-import QuestionPage from "./pages/question";
 
+import QuestionPage from "./pages/question";
 
 const App = () => {
   return (
@@ -23,7 +22,6 @@ const App = () => {
         <Route path="histroy" element={<HistroyPage />} />
         <Route path="settings" element={<SettingsPage />} />
         <Route path="help-center" element={<HelpCenterPage />} />
-        <Route path="task/:taskID" element={<Task/>}/>
       </Route>
 
       <Route path="/auth" element={<Auth />}>
