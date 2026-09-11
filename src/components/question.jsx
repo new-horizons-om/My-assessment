@@ -1,5 +1,6 @@
-import React from "react";
+
 import QuestionCard from "./common/questionCard";
+import { questionData } from "../data";
 
 const Question = () => {
   return (
@@ -10,10 +11,11 @@ const Question = () => {
         </h1>
       </div>
       <div className="space-y-3">
-            <QuestionCard/>
-            <QuestionCard/>
-            <QuestionCard/>
-            <QuestionCard/>
+        {
+            questionData.map((question, index) =>(
+                <QuestionCard key={index} question={question}/>
+            ))
+        }
       </div>
     </div>
   );
