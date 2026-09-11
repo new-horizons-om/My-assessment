@@ -13,7 +13,7 @@ const Dashboard = () => {
       >
         <Sidebar close={setShowSidebar} />
       </div>
-      <div className="col-span-1 lg:col-span-5 lg:p-5 p-2 flex flex-col justify-start items-start gap-2 h-full overflow-y-auto">
+      <div className="col-span-1 lg:col-span-5 lg:p-5 pt-2 px-4 pb-10 flex flex-col justify-start items-start gap-2 h-full overflow-y-auto">
         <div className="lg:hidden flex justify-between w-full bg-blue-400 text-white p-2 rounded-md shadow">
           <div className="inline-flex items-center gap-2">
             <button
