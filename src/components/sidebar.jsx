@@ -51,8 +51,8 @@ const Sidebar = ({close}) => {
     <nav className="flex flex-col h-full">
       <div className="flex flex-col gap-6 flex-1">
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-orange-400">My Assessment</h1>
-        <button onClick={()=> close(false)} className="lg:hidden text-orange-400"><FaTimes size={25}/></button>
+        <h1 className="text-2xl font-bold text-white">My Assessment</h1>
+        <button onClick={()=> close(false)} className="lg:hidden text-white"><FaTimes size={25}/></button>
       </div>
 
      
@@ -65,7 +65,7 @@ const Sidebar = ({close}) => {
               to={link.link}
               onClick={()=> close(false)}
               className={({ isActive}) =>
-                 isActive ? "block bg-orange-400 text-white w-full p-1 rounded-sm" : "block p-1"
+                 isActive ? "block bg-white text-blue-500 w-full p-1 rounded-sm" : "block p-1 text-white"
               }
             >
               <span className="flex items-center gap-2">{link.icon}{link.title}</span>
@@ -84,13 +84,13 @@ const Sidebar = ({close}) => {
 
       <div className="flex justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-full bg-orange-400 py-2 flex justify-center items-center"><FaRegUser size={25} color="white"/></div>
+            <div className="w-10 h-10 rounded-full bg-white py-2 flex justify-center items-center"><FaRegUser size={25} color="skyblue"/></div>
             <div>
-              <h1 className="text-sm font-semibold">Username</h1>
-              <p className="text-xs ">Staff</p>
+              <h1 className="text-sm font-semibold text-white">Username</h1>
+              <p className="text-xs text-white/80 ">Staff</p>
             </div>
           </div>
-          <button title="Logout" className="flex items-center gap-2 cursor-pointer"><IoLogOutOutline size={25}/></button>
+          <button title="Logout" className="text-white flex items-center gap-2 cursor-pointer"><IoLogOutOutline size={25}/></button>
       </div>
     </nav>
   );

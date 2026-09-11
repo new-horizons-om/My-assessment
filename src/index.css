@@ -22,3 +22,8 @@
   background-image: url("./assets/chris-appano-F59muNgxqlg-unsplash.jpg");
   background-size: cover;
 }
+
+.question-bg {
+  background-image: url("../src/assets/shridhar-thorat-6AKLKt-KmdY-unsplash.jpg");
+  background-size: cover;
+}

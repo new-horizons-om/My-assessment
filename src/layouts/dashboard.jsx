@@ -9,7 +9,7 @@ const Dashboard = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-6 bg-gray-100 h-screen relative z-99">
       <div
-        className={`${showSidebar ? "translate-x-0" : "-translate-x-full "} absolute h-screen transform transition ease-linear lg:translate-0 lg:static lg:col-span-1 w-full lg:w-auto bg-white p-2 lg:p-5`}
+        className={`${showSidebar ? "translate-x-0" : "-translate-x-full "} bg-blue-400 absolute h-screen transform transition ease-linear lg:translate-0 lg:static lg:col-span-1 w-full lg:w-auto p-2 lg:p-5`}
       >
         <Sidebar close={setShowSidebar} />
       </div>
