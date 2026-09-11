@@ -1,5 +1,4 @@
-import React from "react";
-import Heading from "../components/common/heading";
+
 
 const DashboardPage = () => {
   return (
