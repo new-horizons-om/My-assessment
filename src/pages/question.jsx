@@ -1,8 +1,11 @@
 import React from 'react'
+import Question from '../components/question'
 
 const QuestionPage = () => {
   return (
-    <div>QuestionPage</div>
+    <>
+      <Question/>
+    </>
   )
 }
 
