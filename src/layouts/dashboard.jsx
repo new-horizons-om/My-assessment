@@ -5,7 +5,7 @@ import { FaBars } from "react-icons/fa";
 
 const Dashboard = () => {
   return (
-    <div className=" bg-gray-100 h-screen relative z-99 scrollbar-none w-200 mx-auto overflow-hidden">
+    <div className=" bg-gray-100 h-screen relative z-99 scrollbar-none w-full lg:w-200 mx-auto overflow-hidden">
       <div className="absolute flex justify-center items-center w-full bottom-5">
         <Sidebar />
       </div>
