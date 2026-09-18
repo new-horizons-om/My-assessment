@@ -6,7 +6,7 @@ const Question = () => {
   return (
     <div className="flex flex-col gap-3">
       <div className="question-bg h-50 p-5 flex justify-center items-center text-sm bg-white border border-gray-300 rounded-lg">
-        <h1 className="text-2xl text-gray-800 text-white font-semibold">
+        <h1 className="text-2xl text-gray-800 font-semibold">
           Discipleship Assessment Questions
         </h1>
       </div>

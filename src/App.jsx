@@ -11,17 +11,19 @@ import Register from "./pages/register";
 import ForgetPassword from "./pages/forgetPassword";
 
 import QuestionPage from "./pages/question";
+import View from "./pages/view";
 
 const App = () => {
   return (
     <Routes>
       <Route element={<Dashboard />}>
         <Route path="/" element={<DashboardPage />} />
-        <Route path="question" element={<QuestionPage />} />
+        <Route path="question" element={<QuestionPage />}/>
         <Route path="bible" element={<TaskListPage />} />
         <Route path="histroy" element={<HistroyPage />} />
         <Route path="settings" element={<SettingsPage />} />
         <Route path="help-center" element={<HelpCenterPage />} />
+        <Route path="question/view/:id" element={<View />} />
       </Route>
 
       <Route path="/auth" element={<Auth />}>

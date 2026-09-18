@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const QuestionCard = ({ question }) => {
   return (
-    <div className="bg-white border border-blue-300 flex justify-center items-center gap-3 p-2 rounded-2xl hover:bg-blue-100 transition-all cursor-pointer">
+    <Link to={`view/${question?.id}`} className="bg-white border border-blue-300 flex justify-center items-center gap-3 p-2 rounded-2xl hover:bg-blue-100 transition-all cursor-pointer">
       <div className="w-15">
         <div className="w-10 h-10 flex justify-center items-center border border-blue-300 rounded-lg">
           <h1 className="font-bold text-blue-500">
@@ -29,7 +30,7 @@ const QuestionCard = ({ question }) => {
           <span>0</span> of <span>{question?.viewQuestion.length}</span>
         </p>
       </div>
-    </div>
+    </Link>
   );
 };
 
