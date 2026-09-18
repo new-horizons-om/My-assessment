@@ -13,7 +13,7 @@ const AnswerCard = ({ info }) => {
         <h3 className="grow mb-2 font-semibold">{info?.question}</h3>
         {show? <FaChevronUp/> : <FaChevronDown/>}
       </div>
-      <p className={`${!show && "hidden"}`}>{info?.answer}</p>
+      <p className={`${!show && "hidden"} text-gray-600`}>{info?.answer}</p>
     </li>
   );
 };
